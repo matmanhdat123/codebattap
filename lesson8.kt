@@ -1,5 +1,3 @@
-package bai8
-
 import java.util.ArrayList
     var DEC_10 = 10
 
@@ -7,15 +5,15 @@ import java.util.ArrayList
     fun main(args: Array<String>) {
         var count = 0
         for (i in 100000..999999) {
-            if (isThuanNghich(i)) {
+            if (isNumberofreversible(i)) {
                 println(i)
                 count++
             }
         }
-        println("Tổng các số thuận nghịch có 6 chữ số: $count")
+        println("Total number of inversely-6 digits: $count")
     }
 
-    fun isThuanNghich(n: Int): Boolean {
+    fun isNumberofreversible(n: Int): Boolean {
         var n = n
         val listNumbers = ArrayList<Int>()
         do {

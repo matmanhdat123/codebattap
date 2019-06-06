@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun phanTich(n: Int) {
+fun Analysis(n: Int) {
         var n = n
         var i = 2
         while (n > 0) {
@@ -27,10 +27,10 @@ fun phanTich(n: Int) {
     }
 
     fun main(args:Array<String>) {
-        println("Số nguyên là: ")
+        println("Input: ")
         val sc = Scanner(System.`in`)
         val n = sc.nextInt()
-        print("phan tich n thanh cac thua so nguyen to: ")
-        phanTich(n)
+        print("Analysis of $n to excess of prime: ")
+        Analysis(n)
         println("")
     }

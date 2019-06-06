@@ -3,7 +3,7 @@ package bai7
 import java.util.Scanner
 
 
-fun nhap(): Int {
+fun Input(): Int {
     val input = Scanner(System.`in`)
     var check = false
     var n = 0
@@ -13,7 +13,6 @@ fun nhap(): Int {
             n = input.nextInt()
             check = true
         } catch (e: Exception) {
-            println("Bạn phải nhập số! Hãy nhập lại...")
             input.nextLine()
         }
 
@@ -33,14 +32,14 @@ fun checkSNT(n: Int): Boolean {
         return false
 }
 fun main(args: Array<String>) {
-    print("Nhập n= ")
-    val n = nhap()
+    print("Input n= ")
+    val n = Input()
     val f = IntArray(n)
     f[0] = 1
     f[1] = 1
     var i = 1
     var count = 1
-    print("Các số Fibonanci nhỏ hơn $n là số nguyên tố là: \n 1")
+    print("The Fibonacci number is less than $n  the prime number: \n 1")
     while (f[i] < n) {
         if (checkSNT(f[i])) {
             print(" " + f[i])
@@ -49,5 +48,5 @@ fun main(args: Array<String>) {
         i++
         f[i] = f[i - 1] + f[i - 2]
     }
-    println("\n Có $count số thỏa mãn")
+    println("\n has $count satisfaction of being")
 }

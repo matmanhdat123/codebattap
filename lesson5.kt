@@ -5,15 +5,15 @@ import java.util.Scanner
 
 
     fun main(args: Array<String>) {
-        print("Nhập n = ")
+        print("Input number n = ")
         val n = scanner.nextInt()
-        System.out.printf("%d số nguyên tố đầu tiên là: \n", n)
-        var dem = 0
+        System.out.printf(" The first %d prime number is: \n", n)
+        var count = 0
         var i = 2
-        while (dem < n) {
+        while (count < n) {
             if (isPrimeNumber(i)) {
                 print("$i ")
-                dem++
+                count++
             }
             i++
         }

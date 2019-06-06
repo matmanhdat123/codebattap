@@ -11,5 +11,5 @@ fun main(args: Array<String>) {
             break
         }
     }
-    println("USCL của $a và $b = $ucscln")
+    println("The greatest common divisor of $a and $b = $ucscln")
 }

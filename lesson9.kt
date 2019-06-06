@@ -1,6 +1,6 @@
 import java.util.Scanner
 
-fun phanTich1(n: Int) {
+fun Analysis1(n: Int) {
     var n = n
     var i = 2
     while (n > 0) {
@@ -16,7 +16,7 @@ fun phanTich1(n: Int) {
     }
 }
 
-internal fun tong1(n: Int): Int {
+internal fun Total1(n: Int): Int {
     var n = n
     var tg = 0
     while (n > 0) {
@@ -27,11 +27,11 @@ internal fun tong1(n: Int): Int {
 }
 
 fun main(args:Array<String>) {
-    println("Số nguyên là: ")
+    println("Input: ")
     val sc = Scanner(System.`in`)
     val n = sc.nextInt()
-    println("tổng các chữ số là: " + tong1(n))
-    print("phan tich n thanh cac thua so nguyen to: ")
-    phanTich1(n)
+    println("The sum of the digits is: " + Total1(n))
+    print("Analysis of $n to excess of prime: ")
+    Analysis1(n)
     println("")
 }
